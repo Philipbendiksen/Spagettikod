@@ -17,18 +17,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <header className="bg-green-100 p-4 flex justify-between items-center text-2xl">
-          <Link href="/homepage">Hello Geek</Link>
+      <body
+        className={inter.className}
+        style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
+      >
+        <header className="bg-slate-800  p-4 flex justify-between items-center text-2xl text-white">
+          <Link href="/">This is a site about code smell</Link>
           <nav className="flex gap-2">
             <Link href="/about">About</Link>
             <Link href="/pricing">Price</Link>
           </nav>
         </header>
 
-        {children}
-        <footer className="bg-green-100 p-4">
-          <p>Footer</p>
+        <div className="content" style={{ flex: "1" }}>
+          {children}
+        </div>
+
+        <footer className="bg-slate-800 flex justify-center items-end p-4">
+          <p className="text-white">Footer</p>
         </footer>
       </body>
     </html>

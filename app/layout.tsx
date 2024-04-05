@@ -24,8 +24,10 @@ export default function RootLayout({
         <header className="bg-slate-800  p-4 flex justify-between items-center text-2xl text-white">
           <Link href="/">This is a site about code smell</Link>
           <nav className="flex gap-2">
-            <Link href="/about">About</Link>
-            <Link href="/pricing">Price</Link>
+            <Link href="/SpagettiOne"> one</Link>
+            <Link href="/SpagettiTwo"> two</Link>
+            <Link href="/SpagettiThree"> three</Link>
+            <Link href="/SpagettiFour"> four</Link>
           </nav>
         </header>
 

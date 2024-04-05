@@ -5,5 +5,5 @@ const addusrbtn = () => {}; // Bryter mot "Avoid contractions" Skriv inte förko
 const addUserButton = () => {};
 
 export default function MyButton() {
-  return <button> press me dawd </button>;
+  return <button className="bg-red-600"> press me </button>;
 }

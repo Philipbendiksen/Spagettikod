@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function UserSetting() {
   const [user, setUser] = useState<string | null>(null);
 
-  // Här bryts principen "Avoid Side Effects" vilket framförallt är kopplat till den bestämda tiden som försvårar underhåll av koden.
+  // Här bryts principen "Avoid Side Effects" vilket framförallt är kopplat till den bestämda tiden, som försvårar underhåll av koden.
 
   const updateUser = (newUser: string) => {
     setTimeout(() => {

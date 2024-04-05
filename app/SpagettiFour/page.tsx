@@ -1,24 +1,17 @@
 "use client";
-
-export function calculateTotal(items: number[]) {
-  let total = 0;
-  let i;
-  let len = items.length;
-  for (i = 0; i < len; i++) {
-    total += items[i];
-  }
-  return total;
-}
-
-export default function About() {
-  const items = [10, 20, 30]; // Exempel på en array med nummer
-
-  const total = calculateTotal(items); // Anropa funktionen calculateTotal och spara resultatet i en variabel
-
+// här är en funktion som heter search
+function Search() {
   return (
-    <main className="flex justify-center">
-      <h2>Spagetti Four</h2>
-      <p>Total: {total}</p>
-    </main>
+    <div className="flex flex-col">
+      <div className="flex justify-between p-4">
+        {/* Text med Search */}
+        <span className="ml-4">SEARCH</span>
+      </div>
+      {/* En förinställd text där det står search */}
+      <input placeholder="Search" />
+    </div> // detta bryter mot "Only comment things that have business logic complexity.
+    // kommentarer hör enbart hemma i koden om dem förklarar något som inte är självklart för läsaren
   );
 }
+
+export default Search();

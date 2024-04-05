@@ -10,7 +10,8 @@ interface User {
 }
 
 export default function Home() {
-  class UserImpl implements User {
+  class UserImp implements User {
+    //  Bryter mot "Avoid contractions" Skriv inte förkortningar som förvirrar.
     name: string;
 
     // bryter mot SRP eller singe responsibility principen som säger att en construktor inte får utföra arbete. Vilket den gör genom att anropa metoden loadUser.
@@ -25,9 +26,9 @@ export default function Home() {
   }
 
   useEffect(() => {
-    const user: User = new UserImpl("Alice");
+    const user: User = new UserImp("Philip");
     console.log(user.name);
-  }, []);
+  });
 
   return (
     <main>
